@@ -1,33 +1,47 @@
-AI Automation Demo Project
+# AI Automation Project
 
-A sample end-to-end UI automation framework built with Playwright and JavaScript to demonstrate modern test automation practices, AI-assisted development workflows, and scalable test design patterns.
+This is a Playwright project for automation testing.
 
-This project showcases:
+## What it includes
 
-* End-to-end browser automation using Playwright
-* Structured and maintainable test architecture
-* Automated user account creation and sign-in validation flows
-* Headed and headless execution support
-* Reusable utility methods and popup handling
-* Debug logging and HTML reporting
-* AI-assisted test generation and workflow experimentation using MCP/Codex tools
+- End-to-end browser automation using Playwright
+- Structured test architecture for account creation and login flows
+- Headed and headless execution support
+- Popup and overlay handling for real-world sites
+- HTML report generation
+- AI-assisted workflow support
 
-Tech Stack
+## Getting Started
 
-* Playwright
-* JavaScript (Node.js)
-* VS Code Insiders
-* MCP / AI-assisted coding workflows
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Features
+2. Install Playwright browsers:
+   ```bash
+   npx playwright install
+   ```
 
-* Cross-browser ready automation setup
-* Dynamic test data generation
-* Popup and overlay handling
-* Modular test organization
-* HTML execution reports
-* CI/CD ready project structure
+3. Run tests:
+   ```bash
+   npm test
+   ```
 
-Purpose
+4. Run the Steve Madden account flow in headed mode:
+   ```bash
+   npx playwright test tests/stevemadden-account.spec.js --headed
+   ```
 
-This repository was created as a demo project to showcase automation engineering skills, framework organization, and modern AI-assisted development capabilities during technical interviews and demonstrations.
+5. Show report:
+   ```bash
+   npx playwright show-report
+   ```
+
+## Project Structure
+
+- `.github/copilot-instructions.md` - Workspace guidance for Copilot and project flow
+- `tests/` - Test files
+- `playwright.config.js` - Playwright configuration
+- `package.json` - Project dependencies and scripts
+- `README.md` - Project documentation
